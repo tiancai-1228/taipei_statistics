@@ -5,6 +5,8 @@ import { VictoryBar, VictoryChart, VictoryAxis, VictoryGroup } from "victory";
 import styles from "../../styles/Home.module.css";
 import taipeilogo from "../image/taipeilogo.png";
 
+import Image from "next/image";
+
 const Home = () => {
   const [data, setData] = useState<any>();
   const [city, setCity] = useState<any>();
@@ -117,7 +119,10 @@ const Home = () => {
   return (
     <div className={styles.App}>
       <div className={styles.logo}>
-        <img src={taipeilogo} alt="" width="40%" />
+        <div className={styles.img}>
+          <Image src={taipeilogo} />
+        </div>
+
         <h1 className={styles.h1}> 110戶數、人口數按戶別及性別</h1>
       </div>
       <div className={styles.select_m}>
