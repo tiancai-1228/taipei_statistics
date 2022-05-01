@@ -1,0 +1,87 @@
+.App {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  padding-top: 20px;
+}
+.h1 {
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 3;
+  background-color: rgb(200, 200, 200);
+  height: 100vh;
+}
+.label {
+  margin-right: 10px;
+}
+.select_m {
+  display: none;
+}
+.select_d {
+  width: 80%;
+  margin-top: 50px;
+}
+.barChart {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sex {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.boyBox {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+}
+.girlBox {
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+}
+@media screen and (max-width: 998px) {
+  .App {
+    display: block;
+  }
+  .logo {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+  }
+  .select_m {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .select_d {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    background-color: rgb(200, 200, 200);
+    height: 80vh;
+  }
+}
