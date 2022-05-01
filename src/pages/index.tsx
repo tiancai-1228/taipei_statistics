@@ -139,8 +139,9 @@ const Home = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.select_d}>
-          <label>地區:</label>
+          <label className={styles.label}>地區:</label>
           <select
+            className={styles.select}
             value={selsectValue}
             onChange={(val) => {
               setSelsectValue(val.target.value);
